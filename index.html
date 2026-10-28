@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Brand.io</div>
+        <button class="burger" id="burgerBtn" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact" class="btn-nav">Связаться</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <h1>Создаем цифровые продукты нового поколения</h1>
+        <p>Разработка адаптивных интерфейсов, проектирование взаимодействия и чистая архитектура.</p>
+        <button class="btn" id="openModalBtn">Заказать проект</button>
+    </main>
+
+    <!-- Модальное окно -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="close-btn" id="closeModalBtn">&times;</button>
+            <h3>Оставить заявку</h3>
+            <form id="contactForm">
+                <input type="text" id="nameInput" placeholder="Ваше имя" required>
+                <input type="email" id="emailInput" placeholder="Email" required>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+            <p class="status-msg" id="statusMsg"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
