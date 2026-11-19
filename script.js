@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Мобильное бургер-меню
     const burgerBtn = document.getElementById('burgerBtn');
     const navLinks = document.getElementById('navLinks');
 
@@ -7,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.toggle('active');
     });
 
-    // 2. Управление модальным окном
     const openModalBtn = document.getElementById('openModalBtn');
     const closeModalBtn = document.getElementById('closeModalBtn');
     const modalOverlay = document.getElementById('modalOverlay');
@@ -26,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 3. Обработка отправки формы
     const form = document.getElementById('contactForm');
     const statusMsg = document.getElementById('statusMsg');
 
