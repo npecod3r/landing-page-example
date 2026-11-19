@@ -179,7 +179,6 @@ body {
     text-align: center;
 }
 
-/* Mobile responsive */
 @media (max-width: 768px) {
     .burger { display: flex; }
     .nav-links {
